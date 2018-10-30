@@ -1,0 +1,26 @@
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" type='text/javascript'></script>
+<script src='https://unpkg.com/spritespin@4.0.3/release/spritespin.js' type='text/javascript'></script>
+<div class="spritespin"></div>
+<script>
+    $(function () {
+        $('.spritespin').spritespin({
+            animate: true,
+            detectSubsampling: true,
+            retainAnimate: true,
+            wrap: true,
+            frame: 1,
+            loop: false,
+            reverse: false,
+            progress: true,
+            source: [
+                "https://cdn.shopify.com/s/files/1/0006/4592/2852/products/001.jpg?v=1538563469",
+                "https://cdn.shopify.com/s/files/1/0006/4592/2852/products/002.jpg?v=1538563469",
+                "https://cdn.shopify.com/s/files/1/0006/4592/2852/products/003.jpg?v=1538563469",
+                "https://cdn.shopify.com/s/files/1/0006/4592/2852/products/004.jpg?v=1538563469",
+            ],
+            sense: -1
+        });
+    });
+</script>
